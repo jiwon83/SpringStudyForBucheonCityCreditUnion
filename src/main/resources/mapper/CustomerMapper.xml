@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sample.simple.mapper.CustomerMapper">
+
+    <resultMap id="CustomerResultMap" type="com.sample.simple.domain.Customer">
+        <id property="customerId" column="customer_id"/>
+        <result property="name" column="name"/>
+        <result property="email" column="email"/>
+        <result property="phone" column="phone"/>
+        <result property="registeredDate" column="registered_date"/>
+    </resultMap>
+
+    <select id="findAll" resultMap="CustomerResultMap">
+        SELECT customer_id, name, email, phone, registered_date
+        FROM customer
+    </select>
+
+    <select id="findById" resultMap="CustomerResultMap" parameterType="int">
+        SELECT customer_id, name, email, phone, registered_date
+        FROM customer
+        WHERE customer_id = #{customerId}
+    </select>
+
+    <insert id="insert" parameterType="com.sample.simple.domain.Customer" useGeneratedKeys="true" keyProperty="customerId">
+        INSERT INTO customer (name, email, phone, registered_date)
+        VALUES (#{name}, #{email}, #{phone}, #{registeredDate})
+    </insert>
+
+    <update id="update" parameterType="com.sample.simple.domain.Customer">
+        UPDATE customer
+        SET name = #{name},
+            email = #{email},
+            phone = #{phone},
+            registered_date = #{registeredDate}
+        WHERE customer_id = #{customerId}
+    </update>
+
+    <delete id="delete" parameterType="int">
+        DELETE FROM customer WHERE customer_id = #{customerId}
+    </delete>
+
+</mapper>
