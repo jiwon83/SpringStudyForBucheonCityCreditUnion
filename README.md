@@ -1,2 +1,0 @@
-# SpringStudyForBucheonCityCreditUnion
-SpringStudyForBucheonCityCreditUnion
