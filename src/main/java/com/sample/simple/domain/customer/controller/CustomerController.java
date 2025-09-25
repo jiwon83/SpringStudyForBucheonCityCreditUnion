@@ -1,9 +1,9 @@
-package com.sample.simple.customer.controller;
+package com.sample.simple.domain.customer.controller;
 
-import com.sample.simple.customer.dto.request.CustomerRequestDto;
-import com.sample.simple.customer.dto.response.CustomerResponseDto;
-import com.sample.simple.customer.service.CustomerService;
-import com.sample.simple.domain.Customer;
+import com.sample.simple.domain.customer.dto.request.CustomerRequestDto;
+import com.sample.simple.domain.customer.dto.response.CustomerResponseDto;
+import com.sample.simple.domain.customer.service.CustomerService;
+import com.sample.simple.domain.customer.entity.Customer;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

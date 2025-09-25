@@ -1,6 +1,6 @@
-package com.sample.simple.customer.mapper;
+package com.sample.simple.domain.customer.mapper;
 
-import com.sample.simple.domain.Customer;
+import com.sample.simple.domain.customer.entity.Customer;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.sample.simple.customer.controller;
+package com.sample.simple.domain.customer.controller;
 
 import com.sample.simple.global.exception.CustomException;
 import org.springframework.stereotype.Controller;

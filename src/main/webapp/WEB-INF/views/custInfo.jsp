@@ -1,3 +1,4 @@
+<%@ page import="com.sample.simple.domain.customer.dto.response.CustomerResponseDto" %>
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="ko">
@@ -37,7 +38,7 @@
 <%
     Object customerObj = request.getAttribute("customer");
     if (customerObj != null) {
-        com.sample.simple.customer.dto.response.CustomerResponseDto customer = (com.sample.simple.customer.dto.response.CustomerResponseDto) customerObj;
+        CustomerResponseDto customer = (CustomerResponseDto) customerObj;
 %>
 <table>
     <tr>
