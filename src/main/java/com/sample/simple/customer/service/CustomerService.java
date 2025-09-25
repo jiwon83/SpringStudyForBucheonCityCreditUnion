@@ -1,7 +1,7 @@
-package com.sample.simple.service;
+package com.sample.simple.customer.service;
 
 import com.sample.simple.domain.Customer;
-import com.sample.simple.mapper.CustomerMapper;
+import com.sample.simple.customer.mapper.CustomerMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.sample.simple.mapper;
+package com.sample.simple.customer.mapper;
 
 import com.sample.simple.domain.Customer;
 import org.apache.ibatis.annotations.Mapper;
